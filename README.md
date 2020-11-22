@@ -54,7 +54,7 @@
 
 ### 3. Get post
  ```
- http://localhost:3010/category/:categoryName/:section/:elementId/?page=1
+ http://localhost:3010/category/:categoryName/:section/:elementId
  ```
  | Name | Type | Description|
 | --- | --- | ---|
