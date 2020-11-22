@@ -29,7 +29,7 @@
  ## REST API
 ### 1. Get categories
  ```
- http://localhost:3010/category/:categoryName
+ http://localhost:3010/category/:categoryName/?page=1
  ```
  | Name | Type | Description|
 | --- | --- | ---|
@@ -41,7 +41,7 @@
 
 ### 2. Get section
  ```
- http://localhost:3010/category/:categoryName/:section
+ http://localhost:3010/category/:categoryName/:section/?page=1
  ```
  | Name | Type | Description|
 | --- | --- | ---|
@@ -54,7 +54,7 @@
 
 ### 3. Get post
  ```
- http://localhost:3010/category/:categoryName/:section/:elementId
+ http://localhost:3010/category/:categoryName/:section/:elementId/?page=1
  ```
  | Name | Type | Description|
 | --- | --- | ---|
