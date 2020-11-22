@@ -35,7 +35,7 @@
 | --- | --- | ---|
 | Method | **GET** |  |
 | categoryName | string | Name of category: **news**, **forums**, **blogs** |
-| Response status | 200 | Collection of category|
+| Response status | 200 | Collection of categories|
 | Response status | 404 | Data not found |
 | Response status | 500 | Server error |
 
@@ -48,7 +48,7 @@
 | Method | **GET** |  |
 | categoryName | string | Name of category: **news**, **forums**, **blogs** |
 | section | string | Name of section: **business**, **ideas**, **srartups**, **design** |
-| Response status | 200 | Collection of category|
+| Response status | 200 | Section of category|
 | Response status | 404 | Data not found |
 | Response status | 500 | Server error |
 
@@ -62,7 +62,7 @@
 | categoryName | string | Name of category: **news**, **forums**, **blogs** |
 | section | string | Name of section: **business**, **ideas**, **srartups**, **design** |
 | elementId | string | _id of post |
-| Response status | 200 | Collection of category|
+| Response status | 200 | Element of category|
 | Response status | 404 | Data not found |
 | Response status | 500 | Server error |
 
