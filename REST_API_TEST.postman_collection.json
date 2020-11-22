@@ -11,7 +11,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:3010/category/news/business/5fba3d8db45d4d001d4c1f4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"category",
+						"news",
+						"business",
+						"5fba3d8db45d4d001d4c1f4c"
+					]
 				}
 			},
 			"response": []
@@ -22,7 +33,17 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:3010/category/news/business",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"category",
+						"news",
+						"business"
+					]
 				}
 			},
 			"response": []
@@ -33,23 +54,21 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "Conten",
+						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8081/category/news/business/5fb408993fc58155546fc782",
+					"raw": "http://localhost:3010/category/news",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "3010",
 					"path": [
 						"category",
-						"news",
-						"business",
-						"5fb408993fc58155546fc782"
+						"news"
 					]
 				}
 			},
