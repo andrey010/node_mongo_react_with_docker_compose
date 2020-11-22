@@ -6,11 +6,11 @@ services:
         build: ./services/client
         ports:
         - 3000:3000
-        volumes:        
-        - .:/services/client/app
+        volumes: 
+        - ./services/client:/app     
         - ./services/client/error.log:/usr/src/app/error.log
         links:
-        - api        
+        - api
     api:
         container_name: nodejs
         build: ./services/api
@@ -18,7 +18,7 @@ services:
         ports:
         - 3010:3010
         volumes:
-        - .:/services/api/app
+        - ./services/api:/app
         - ./services/api/error.log:/usr/src/app/error.log
         links:
         - mongo             
@@ -29,5 +29,4 @@ services:
         ports:
         - 27018:27017
         volumes:
-        - ./services/api/data:/data/db       
-          
+        - ./services/api/data:/data/db

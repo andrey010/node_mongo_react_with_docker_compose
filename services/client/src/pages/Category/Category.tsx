@@ -30,8 +30,7 @@ const Category: React.FC = React.memo(() => {
     const [totalPage, setTotalPage] = useState(0);
 
     const handleVisible = () => setVisible(!visible);
-    console.log()
-    
+        
     const pushRoute = (item:any) => {
         
         if (categoryName.split('/')[2] === item.section) {
@@ -50,8 +49,7 @@ const Category: React.FC = React.memo(() => {
     },[])   
 
     useEffect(() => {        
-        console.log('effect1', currentPage);
-        
+                
         const url = `http://localhost:3010/category${categoryName}/?page=${currentPage}`;    
         setFetching(true)
         axios.get(url)            

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import { CustomCard } from '../../components/CustomCard/CustomCard';
@@ -19,7 +19,7 @@ const Home: React.FC = React.memo(() => {
     const pushRoute = (item: any) => {
         history.push(`/${item.title.toLowerCase()}`)
     }
-    
+       
     return (
         <Container>
             <Row style={{justifyContent: 'center'}}>
